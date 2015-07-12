@@ -10,7 +10,7 @@ install_requires = [
 
 setup(
     name='bearychat-py',
-    version='0.1.1',
+    version='0.2.0',
     author='hbc',
     author_email='bcxxxxxx@gmail.com',
     url='https://github.com/bcho/bearychat-py',
