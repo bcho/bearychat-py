@@ -4,13 +4,13 @@ from setuptools import setup, find_packages
 
 
 install_requires = [
-    'requests>=2.7.0'
+    'requests'
 ]
 
 
 setup(
     name='bearychat-py',
-    version='0.1.0',
+    version='0.1.1',
     author='hbc',
     author_email='bcxxxxxx@gmail.com',
     url='https://github.com/bcho/bearychat-py',
