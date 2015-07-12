@@ -18,6 +18,7 @@ setup(
     long_description=open('README.md').read(),
     license='MIT',
     packages=find_packages('.'),
+    zip_safe=False,
     install_requires=install_requires,
     classifiers=[
         'Intended Audience :: Developers',

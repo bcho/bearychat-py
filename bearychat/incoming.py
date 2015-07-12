@@ -1,12 +1,10 @@
 # coding: utf-8
 
 '''
-    bearychat
-    ~~~~~~~~~
+    incoming
+    ~~~~~~~~
 
-    A simple package for interacting with `bearychat`_ API.
-
-    .. _bearychat: http://bearychat.com/
+    Incoming robot api.
 '''
 
 __all__ = ['InvalidPayloadError', 'Incoming']
