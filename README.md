@@ -16,6 +16,12 @@ A simple package for interacting with [bearychat][bc]'s API.
 >>> bearychat.Incoming('https://hook.bearychat.com').with_text('hello, world').push()
 ```
 
+## Installation
+
+```bash
+pip install bearychat-py
+```
+
 
 ## LICENSE
 
