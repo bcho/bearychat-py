@@ -2,7 +2,4 @@ language: python
 python:
     - "2.7"
     - "3.4"
-before_install:
-    - "python setup.py install"
-    - "pip install pytest"
-script: "py.test tests"
+script: "python setup.py test"
