@@ -29,7 +29,7 @@ class PyTest(TestCommand):
 
 setup(
     name='bearychat-py',
-    version='0.2.0',
+    version='0.3.0',
     author='hbc',
     author_email='bcxxxxxx@gmail.com',
     url='https://github.com/bcho/bearychat-py',
