@@ -113,4 +113,4 @@ class Incoming(object):
     def push(self):
         '''Deliver the message.'''
         message = self.build_message()
-        return requests.post(self.hook, data=message)
+        return requests.post(self.hook, json=message)

@@ -1,13 +1,19 @@
 # coding: utf-8
 
 import pytest
+import responses
 
 from bearychat import Incoming, InvalidPayloadError
 
 
 @pytest.fixture
-def incoming():
-    return Incoming('http://example.org')
+def hook():
+    return 'http://example.org'
+
+
+@pytest.fixture
+def incoming(hook):
+    return Incoming(hook)
 
 
 def test_text(incoming):
@@ -67,3 +73,15 @@ def test_attachment(incoming):
             .with_text('foobar') \
             .with_attachment(something_else='foobar') \
             .build_message()
+
+
+@responses.activate
+def test_push(incoming, hook):
+    responses.add(responses.POST, hook, status=200)
+
+    incoming \
+        .reset() \
+        .with_text('foobar') \
+        .push()
+    content_type = responses.calls[0].request.headers['Content-Type']
+    assert content_type == 'application/json'
