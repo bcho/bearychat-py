@@ -6,7 +6,7 @@ from setuptools.command.test import test as TestCommand
 
 
 install_requires = [
-    'requests'
+    'requests>=2.4.2',
 ]
 
 
@@ -29,7 +29,7 @@ class PyTest(TestCommand):
 
 setup(
     name='bearychat-py',
-    version='0.3.0',
+    version='0.3.1',
     author='hbc',
     author_email='bcxxxxxx@gmail.com',
     url='https://github.com/bcho/bearychat-py',
